@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spark Simple Web Interface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="panel panel-default" id="settings-panel">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#settings">
+            Core ID and API Token
+          </a>
+        </h4>
+      </div>
+      <div id="settings" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <p>
+            Visit <a href="https://www.spark.io/build" target="_blank">https://www.spark.io/build</a> to get the ID of the core to access and your unique API token.
+          </p>
+          <div class="input-group">
+            <span class="input-group-addon">Core ID</span>
+            <input type="text" class="form-control" id="core-id" placeholder="Core ID">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">API Token</span>
+            <input type="text" class="form-control" id="api-token" placeholder="API Token">
+          </div>     
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#functions">
+            Functions
+          </a>
+        </h4>
+      </div>
+      <div id="functions" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <p>
+            Input the function name to call along with the data to pass and hit the post button to attempt to send it to the core.
+          </p>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Function Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Data
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Post</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->              
+          </div><!-- /.row -->
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Function Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Data
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Post</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->              
+          </div><!-- /.row -->
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Function Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Data
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Post</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->              
+          </div><!-- /.row -->
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Function Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Data
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Post</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->              
+          </div><!-- /.row -->            
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#variables">
+            Variables
+          </a>
+        </h4>
+      </div>
+      <div id="variables" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <p>
+            Enter the variable name to query and press the Get button, the value will appear in the field if successful. If you wish to auto-query, enter a value (in ms) in the refresh field.
+          </p>          
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Variable Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-3">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Value
+                </span>
+                <input type="text" class="form-control" value="---" readonly>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                <input type="text" class="form-control" placeholder="Refresh (ms)">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->
+            <div class="col-lg-1">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Get</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->            
+          </div><!-- /.row -->   
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Variable Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-3">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Value
+                </span>
+                <input type="text" class="form-control" value="---" readonly>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                <input type="text" class="form-control" placeholder="Refresh (ms)">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->
+            <div class="col-lg-1">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Get</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->            
+          </div><!-- /.row -->
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Variable Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-3">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Value
+                </span>
+                <input type="text" class="form-control" value="---" readonly>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                <input type="text" class="form-control" placeholder="Refresh (ms)">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->
+            <div class="col-lg-1">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Get</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->            
+          </div><!-- /.row -->
+          <br/><br/>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Variable Name
+                </span>
+                <input type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-3">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  Value
+                </span>
+                <input type="text" class="form-control" value="---" readonly>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-2">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                <input type="text" class="form-control" placeholder="Refresh (ms)">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->
+            <div class="col-lg-1">
+              <div class="input-group">
+                <button class="btn btn-success" type="button">Get</button>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-1 -->            
+          </div><!-- /.row -->                                        
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
