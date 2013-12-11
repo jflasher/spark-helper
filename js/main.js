@@ -31,4 +31,71 @@ $(document).ready(function() {
       return true;
     }
   }
+
+  // Turn on/off the variable refresh if box is checked
+  $("#refresh-1").on("change", function () {
+    if($("#refresh-1").is(":checked")) {
+      $("#get-var-1").attr("disabled", "disabled");
+    } else {
+      $("#get-var-1").removeAttr("disabled");
+    }
+  });
+  $("#refresh-2").on("change", function () {
+    if($("#refresh-2").is(":checked")) {
+      $("#get-var-2").attr("disabled", "disabled");
+    } else {
+      $("#get-var-2").removeAttr("disabled");
+    }
+  });
+  $("#refresh-3").on("change", function () {
+    if($("#refresh-3").is(":checked")) {
+      $("#get-var-3").attr("disabled", "disabled");
+    } else {
+      $("#get-var-3").removeAttr("disabled");
+    }
+  });
+  $("#refresh-4").on("change", function () {
+    if($("#refresh-4").is(":checked")) {
+      $("#get-var-4").attr("disabled", "disabled");
+    } else {
+      $("#get-var-4").removeAttr("disabled");
+    }
+  });
+
+  // On method success
+  function onMethodSuccess() {
+    console.log("success");
+  }
+
+  function onMethodFailure() {
+    console.log("fail");
+  }
+
+  // The base level run method command
+  function doMethod(method, data) {
+    var url = "https://api.spark.io/v1/devices/" + $("#core-id").val() + "/" + method;
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: { access_token: $("#api-token").val(), args: data },
+      success: onMethodSuccess,
+      dataType: "json"
+    }).fail(function(obj) {
+      onMethodFailure();
+    });
+  }
+
+  // Post methods
+  $("#post-1").on("click", function () {
+    doMethod($("#method-1").val(), $("#data-1").val());
+  });
+  $("#post-2").on("click", function () {
+    doMethod($("#method-2").val(), $("#data-2").val());
+  });
+  $("#post-3").on("click", function () {
+    doMethod($("#method-3").val(), $("#data-3").val());
+  });
+  $("#post-4").on("click", function () {
+    doMethod($("#method-4").val(), $("#data-4").val());
+  });
 });
