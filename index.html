@@ -14,282 +14,284 @@
     <![endif]-->
   </head>
   <body>
-    <div class="alert fade in" id="info-alert" hidden></div>
-    <div class="panel panel-default" id="settings-panel">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#settings">
-            Core ID and API Token
-          </a>
-        </h4>
-      </div>
-      <div id="settings" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <p>
-            Visit <a href="https://www.spark.io/build" target="_blank">https://www.spark.io/build</a> to get the ID of the core to access and your unique API token.
-          </p>
-          <div class="input-group">
-            <span class="input-group-addon">Core ID</span>
-            <input type="text" class="form-control" id="core-id" placeholder="Core ID">
+    <div class="container" style="margin-top: 20px;">
+      <div class="alert fade in" id="info-alert" hidden></div>
+      <div class="panel panel-default" id="settings-panel">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#settings">
+              Core ID and API Token
+            </a>
+          </h4>
+        </div>
+        <div id="settings" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>
+              Visit <a href="https://www.spark.io/build" target="_blank">https://www.spark.io/build</a> to get the ID of the core to access and your unique API token.
+            </p>
+            <div class="input-group">
+              <span class="input-group-addon">Core ID</span>
+              <input type="text" class="form-control" id="core-id" placeholder="Core ID">
+            </div>
+            <div class="input-group" style="margin-top:15px;">
+              <span class="input-group-addon">API Token</span>
+              <input type="text" class="form-control" id="api-token" placeholder="API Token">
+            </div>     
           </div>
-          <div class="input-group">
-            <span class="input-group-addon">API Token</span>
-            <input type="text" class="form-control" id="api-token" placeholder="API Token">
-          </div>     
         </div>
       </div>
-    </div>
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#functions">
-            Functions
-          </a>
-        </h4>
-      </div>
-      <div id="functions" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <p>
-            Input the function name to call along with the data to pass and hit the post button to attempt to send it to the core.
-          </p>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Function Name
-                </span>
-                <input type="text" class="form-control" id="method-1">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Data
-                </span>
-                <input type="text" class="form-control" id="data-1">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="post-1">Post</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->              
-          </div><!-- /.row -->
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Function Name
-                </span>
-                <input type="text" class="form-control" id="method-2">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Data
-                </span>
-                <input type="text" class="form-control" id="data-2">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="post-2">Post</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->              
-          </div><!-- /.row -->
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Function Name
-                </span>
-                <input type="text" class="form-control" id="method-3">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Data
-                </span>
-                <input type="text" class="form-control" id="data-3">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="post-3">Post</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->              
-          </div><!-- /.row -->
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Function Name
-                </span>
-                <input type="text" class="form-control" id="method-4">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Data
-                </span>
-                <input type="text" class="form-control" id="data-4">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="post-4">Post</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->              
-          </div><!-- /.row -->            
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#functions">
+              Functions
+            </a>
+          </h4>
+        </div>
+        <div id="functions" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>
+              Input the function name to call along with the data to pass and hit the post button to attempt to send it to the core.
+            </p>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Function Name
+                  </span>
+                  <input type="text" class="form-control" id="method-1">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Data
+                  </span>
+                  <input type="text" class="form-control" id="data-1">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="post-1">Post</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->              
+            </div><!-- /.row -->
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Function Name
+                  </span>
+                  <input type="text" class="form-control" id="method-2">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Data
+                  </span>
+                  <input type="text" class="form-control" id="data-2">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="post-2">Post</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->              
+            </div><!-- /.row -->
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Function Name
+                  </span>
+                  <input type="text" class="form-control" id="method-3">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Data
+                  </span>
+                  <input type="text" class="form-control" id="data-3">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="post-3">Post</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->              
+            </div><!-- /.row -->
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Function Name
+                  </span>
+                  <input type="text" class="form-control" id="method-4">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Data
+                  </span>
+                  <input type="text" class="form-control" id="data-4">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="post-4">Post</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->              
+            </div><!-- /.row -->            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#variables">
-            Variables
-          </a>
-        </h4>
-      </div>
-      <div id="variables" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <p>
-            Enter the variable name to query and press the Get button, the value will appear in the field if successful. If you wish to auto-query, check the box. Enter a custom time in ms or leave it blank for the default refresh time of 5 seconds.
-          </p>          
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Variable Name
-                </span>
-                <input type="text" class="form-control" id="var-1">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-3">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Value
-                </span>
-                <input type="text" class="form-control" value="---" readonly id="var-val-1">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" id="refresh-1">
-                </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-1">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->
-            <div class="col-lg-1">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="get-var-1">Get</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->            
-          </div><!-- /.row -->   
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Variable Name
-                </span>
-                <input type="text" class="form-control" id="var-2">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-3">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Value
-                </span>
-                <input type="text" class="form-control" value="---" readonly id="var-val-2">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" id="refresh-2">
-                </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-2">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->
-            <div class="col-lg-1">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="get-var-2">Get</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->            
-          </div><!-- /.row -->
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Variable Name
-                </span>
-                <input type="text" class="form-control" id="var-3">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-3">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Value
-                </span>
-                <input type="text" class="form-control" value="---" readonly id="var-val-3">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" id="refresh-3">
-                </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-3">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->
-            <div class="col-lg-1">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="get-var-3">Get</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->            
-          </div><!-- /.row -->
-          <br/><br/>
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Variable Name
-                </span>
-                <input type="text" class="form-control" id="var-4">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-3">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  Value
-                </span>
-                <input type="text" class="form-control" value="---" readonly id="var-val-4">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" id="refresh-4">
-                </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-4">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->
-            <div class="col-lg-1">
-              <div class="input-group">
-                <button class="btn btn-success" type="button" id="get-var-4">Get</button>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-1 -->            
-          </div><!-- /.row -->                                        
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#variables">
+              Variables
+            </a>
+          </h4>
+        </div>
+        <div id="variables" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>
+              Enter the variable name to query and press the Get button, the value will appear in the field if successful. If you wish to auto-query, check the box. Enter a custom time in ms or leave it blank for the default refresh time of 5 seconds.
+            </p>          
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Variable Name
+                  </span>
+                  <input type="text" class="form-control" id="var-1">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-3">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Value
+                  </span>
+                  <input type="text" class="form-control" value="---" readonly id="var-val-1">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" id="refresh-1">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-1">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->
+              <div class="col-lg-1">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="get-var-1">Get</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->            
+            </div><!-- /.row -->   
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Variable Name
+                  </span>
+                  <input type="text" class="form-control" id="var-2">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-3">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Value
+                  </span>
+                  <input type="text" class="form-control" value="---" readonly id="var-val-2">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" id="refresh-2">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-2">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->
+              <div class="col-lg-1">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="get-var-2">Get</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->            
+            </div><!-- /.row -->
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Variable Name
+                  </span>
+                  <input type="text" class="form-control" id="var-3">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-3">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Value
+                  </span>
+                  <input type="text" class="form-control" value="---" readonly id="var-val-3">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" id="refresh-3">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-3">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->
+              <div class="col-lg-1">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="get-var-3">Get</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->            
+            </div><!-- /.row -->
+            <br/><br/>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Variable Name
+                  </span>
+                  <input type="text" class="form-control" id="var-4">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-3">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    Value
+                  </span>
+                  <input type="text" class="form-control" value="---" readonly id="var-val-4">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-2">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" id="refresh-4">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-4">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->
+              <div class="col-lg-1">
+                <div class="input-group">
+                  <button class="btn btn-success" type="button" id="get-var-4">Get</button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-1 -->            
+            </div><!-- /.row -->                                        
+          </div>
         </div>
       </div>
     </div>
