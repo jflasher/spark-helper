@@ -14,6 +14,7 @@
     <![endif]-->
   </head>
   <body>
+    <div class="alert fade in" id="info-alert" hidden></div>
     <div class="panel panel-default" id="settings-panel">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -160,7 +161,7 @@
       <div id="variables" class="panel-collapse collapse in">
         <div class="panel-body">
           <p>
-            Enter the variable name to query and press the Get button, the value will appear in the field if successful. If you wish to auto-query, enter a value (in ms) in the refresh field.
+            Enter the variable name to query and press the Get button, the value will appear in the field if successful. If you wish to auto-query, check the box. Enter a custom time in ms or leave it blank for the default refresh time of 5 seconds.
           </p>          
           <div class="row">
             <div class="col-lg-5">
@@ -168,7 +169,7 @@
                 <span class="input-group-addon">
                   Variable Name
                 </span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="var-1">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-3">
@@ -176,7 +177,7 @@
                 <span class="input-group-addon">
                   Value
                 </span>
-                <input type="text" class="form-control" value="---" readonly>
+                <input type="text" class="form-control" value="---" readonly id="var-val-1">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-2">
@@ -184,7 +185,7 @@
                 <span class="input-group-addon">
                   <input type="checkbox" id="refresh-1">
                 </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)">
+                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-1">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-1 -->
             <div class="col-lg-1">
@@ -200,7 +201,7 @@
                 <span class="input-group-addon">
                   Variable Name
                 </span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="var-2">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-3">
@@ -208,7 +209,7 @@
                 <span class="input-group-addon">
                   Value
                 </span>
-                <input type="text" class="form-control" value="---" readonly>
+                <input type="text" class="form-control" value="---" readonly id="var-val-2">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-2">
@@ -216,7 +217,7 @@
                 <span class="input-group-addon">
                   <input type="checkbox" id="refresh-2">
                 </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)">
+                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-2">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-1 -->
             <div class="col-lg-1">
@@ -232,7 +233,7 @@
                 <span class="input-group-addon">
                   Variable Name
                 </span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="var-3">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-3">
@@ -240,7 +241,7 @@
                 <span class="input-group-addon">
                   Value
                 </span>
-                <input type="text" class="form-control" value="---" readonly>
+                <input type="text" class="form-control" value="---" readonly id="var-val-3">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-2">
@@ -248,7 +249,7 @@
                 <span class="input-group-addon">
                   <input type="checkbox" id="refresh-3">
                 </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)">
+                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-3">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-1 -->
             <div class="col-lg-1">
@@ -264,7 +265,7 @@
                 <span class="input-group-addon">
                   Variable Name
                 </span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="var-4">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-3">
@@ -272,7 +273,7 @@
                 <span class="input-group-addon">
                   Value
                 </span>
-                <input type="text" class="form-control" value="---" readonly>
+                <input type="text" class="form-control" value="---" readonly id="var-val-4">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-2">
@@ -280,7 +281,7 @@
                 <span class="input-group-addon">
                   <input type="checkbox" id="refresh-4">
                 </span>
-                <input type="text" class="form-control" placeholder="Refresh (ms)">
+                <input type="text" class="form-control" placeholder="Refresh (ms)" id="refresh-time-4">
               </div><!-- /input-group -->
             </div><!-- /.col-lg-1 -->
             <div class="col-lg-1">
