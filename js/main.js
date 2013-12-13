@@ -5,28 +5,30 @@ $(document).ready(function() {
   // Change settings header if we don't have info
   checkSettings();
 
-  // Check if core id and token is in a cookie
-  if($.cookie("api-token")) {
-    $("#api-token").val($.cookie("api-token"));
+  // Check if core id and token is in local storage
+  if (localStorage.getItem("api-token")) {
+    $("#api-token").val(localStorage.getItem("api-token"));
   }
-  if($.cookie("api-token")) {
-    $("#core-id").val($.cookie("core-id"));
+  if (localStorage.getItem("core-id")) {
+    $("#core-id").val(localStorage.getItem("core-id"));
   }
 
-  // Save core id and token values to a cookie whenever they're changed
+  // Save core id and token values to local storage whenever they're changed
   $( "#api-token" ).on("change", function() {
-    $.cookie("api-token", $("#api-token").val());
+    localStorage.setItem("api-token", $("#api-token").val());
     checkSettings();
   });
   $( "#core-id" ).on("change", function() {
-    $.cookie("core-id", $("#core-id").val());
+    localStorage.setItem("core-id", $("#core-id").val());
     checkSettings();
   });
 
   // Check the state of the settings
   function checkSettings() {
-    if ($.cookie("api-token") === undefined || $.cookie("api-token") === '' ||
-    $.cookie("core-id") === undefined || $.cookie("core-id") === '') {
+    var apiToken = localStorage.getItem("api-token");
+    var coreID = localStorage.getItem("core-id");
+    if (apiToken === undefined || apiToken === '' || apiToken === null ||
+      coreID === undefined || coreID === '' || coreID === null) {
       $("#settings-panel").removeClass("panel-default").addClass("panel-danger");
       return false;
     } else {
