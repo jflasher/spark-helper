@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,8 +15,8 @@
     <![endif]-->
   </head>
   <body data-ng-app>
-    <div class="container" style="margin-top: 20px;">
-      <div class="alert fade in" id="info-alert" hidden></div>
+    <div class="container">
+      <div class="alert fade in" id="info-alert" hidden data-spy="affix"></div>
       <div class="panel panel-default" id="settings-panel">
         <div class="panel-heading">
           <h4 class="panel-title">
@@ -33,7 +34,7 @@
               <span class="input-group-addon">Core ID</span>
               <input type="text" class="form-control" id="core-id" placeholder="Core ID">
             </div>
-            <div class="input-group" style="margin-top:15px;">
+            <div class="input-group">
               <span class="input-group-addon">API Token</span>
               <input type="text" class="form-control" id="api-token" placeholder="API Token">
             </div>     

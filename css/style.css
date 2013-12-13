@@ -1,0 +1,15 @@
+.container {
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-top:15px;
+}
+
+.alert {
+  z-index: 1000;
+}
+
+.affix {
+  width: 92%;
+}

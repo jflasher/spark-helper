@@ -41,6 +41,7 @@ $(document).ready(function() {
   // Alerts
   ////
   $("#info-alert").alert();
+  $("#info-alert").affix();
 
   ////
   // Methods
